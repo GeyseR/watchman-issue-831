@@ -2,4 +2,4 @@ This is a repo for reproducing the [watchman#831](https://github.com/facebook/wa
 
 How to run:
 
-    docker build -t watchman-issue-831 . && docker run $(pwd)/code:/code watchman-issue-831 watchman watch /code
+    docker build -t watchman-issue-831 . && docker run -v $(pwd)/code:/code watchman-issue-831 watchman watch /code
